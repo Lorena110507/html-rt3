@@ -10,41 +10,80 @@
       margin: 0;
       padding: 0;
       background-color: #fff0f5;
-      color: #3a3a3a;
+      color: #333;
     }
+
     header {
       background-color: #f8c6d8;
-      color: #4a0033;
+      color: #d63384;
       padding: 40px 0;
       text-align: center;
     }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 10px #ccc;
+      margin-bottom: 20px;
+    }
+
     section {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
+
     h1, h2 {
       color: #d63384;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     ul li {
       padding: 8px 0;
     }
-    a {
-      color: #b30059;
-      text-decoration: none;
+
+    .tech-icons img {
+      width: 40px;
+      margin: 5px;
     }
-    a:hover {
-      text-decoration: underline;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
     }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
     .projects a {
-      display: inline-block;
+      display: block;
+      background-color: white;
+      padding: 10px;
       margin: 10px 0;
-      font-weight: bold;
+      border-left: 5px solid #d63384;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-decoration: none;
+      color: #333;
     }
+
+    .projects a:hover {
+      transform: translateX(5px);
+    }
+
     footer {
       background-color: #f8c6d8;
       color: #4a0033;
@@ -56,46 +95,63 @@
 </head>
 <body>
 
-  <header>
-    <h1>Lorena</h1>
-    <p>Redes de Computadores | Ciência de Dados</p>
-  </header>
+<header>
+  <h1>Lorena</h1>
+  <p>Redes de Computadores | Ciência de Dados</p>
+</header>
 
-  <section>
-    <h2>👩 Sobre Mim</h2>
-    <p>Tenho 18 anos e estou aprendendo e praticando tecnologias como redes de computadores, Python para ciência de dados, monitoramento com Zabbix e Grafana, além de projetos com AWS e Streamlit. Gosto de entender as coisas com clareza e estou sempre buscando melhorar.</p>
-  </section>
+<section>
+  <h2>🔧 Tech Stack</h2>
+  <div class="tech-icons">
+    <img src="https://cdn.simpleicons.org/arduino" alt="Arduino">
+    <img src="https://cdn.simpleicons.org/github" alt="GitHub">
+    <img src="https://cdn.simpleicons.org/python" alt="Python">
+    <img src="https://cdn.simpleicons.org/linux" alt="Linux">
+    <!-- Adicione outros ícones se quiser -->
+  </div>
+</section>
 
-  <section>
-    <h2>🧠 Habilidades</h2>
-    <ul>
-      <li>Redes: Cisco, pfSense, TCP/IP, Subnetting, VLANs</li>
-      <li>Sistemas: Linux, Windows Server</li>
-      <li>Monitoramento: Zabbix, Grafana</li>
-      <li>Ciência de Dados: Python, pandas, matplotlib, Streamlit</li>
-      <li>Cloud: AWS (básico)</li>
-      <li>Raspagem e tratamento de dados</li>
-    </ul>
-  </section>
+<section>
+  <h2>🎓 Certificações</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Certificação</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://cdn.simpleicons.org/cisco" width="20"> CISCO Introduction To Networks</td>
+        <td>Cisco NetAcademy Introduction to Networks</td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.simpleicons.org/amazonaws" width="20"> AWS Academy Cloud Foundations</td>
+        <td>AWS Academy Cloud Foundations</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-  <section class="projects">
-    <h2>🚀 Projetos</h2>
-    <ul>
-      <li><a href="https://github.com/Lorena110507/projeto-redes" target="_blank">🔌 Laboratório de Redes com Cisco e pfSense</a></li>
-      <li><a href="https://github.com/Lorena110507/projeto-monitoramento" target="_blank">📊 Painel de Monitoramento com Zabbix e Grafana</a></li>
-      <li><a href="https://github.com/Lorena110507/analise-dados" target="_blank">📈 Análise de Dados com Python e Streamlit</a></li>
-    </ul>
-  </section>
+<section>
+  <h2>🏆 Conquistas</h2>
+  <ul>
+    <li>Projeto Zabbix (zabwatch)</li>
+    <li>Projeto na Azure (techwave)</li>
+    <li>Curso Técnico em Redes</li>
+    <li>Faculdade de Ciências de Dados</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>📫 Contato</h2>
-    <p>Email: lorenagabarao01531@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Lorena110507" target="_blank">github.com/Lorena110507</a></p>
-  </section>
+<section class="projects">
+  <h2>📁 Projetos</h2>
+  <a href="#">Casa inteligente voltada aos PCDs</a>
+  <a href="#">Monitoramento On-Premises com Zabbix & Grafana (zabwatch)</a>
+</section>
 
-  <footer>
-    <p>Desenvolvido por Lorena © 2025</p>
-  </footer>
+<footer>
+  <p>Desenvolvido por Lorena © 2025</p>
+</footer>
 
 </body>
 </html>
