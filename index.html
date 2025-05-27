@@ -108,6 +108,42 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
+    .tech-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .tech-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 3px;
+      opacity: 0.8;
+      transition: transform 0.2s ease;
+    }
+
+    .tech-icons img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
     footer {
       background-color: var(--rosa-claro);
       color: #4a0033;
@@ -120,6 +156,7 @@
 <body>
 
   <header>
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil">
     <h1>Lorena</h1>
     <p>Redes de Computadores | Ciência de Dados</p>
   </header>
@@ -173,15 +210,20 @@
   </section>
 
   <section>
-    <h2>🧠 Habilidades Técnicas</h2>
+    <h2>🏆 Conquistas</h2>
     <ul>
-      <li>Redes: Cisco, pfSense, TCP/IP, Subnetting, VLANs</li>
-      <li>Sistemas: Linux, Windows Server</li>
-      <li>Monitoramento: Zabbix, Grafana</li>
-      <li>Ciência de Dados: Python, pandas, matplotlib, Streamlit</li>
-      <li>Cloud: AWS (básico)</li>
-      <li>Raspagem e tratamento de dados</li>
+      <li>Projeto Zabbix (zabwatch)</li>
+      <li>Projeto na Azure (techwave)</li>
+      <li>Curso Técnico em Redes</li>
+      <li>Faculdade de Ciências de Dados</li>
     </ul>
+  </section>
+
+  <section class="projects">
+    <h2>🚀 Projetos</h2>
+    <a href="https://github.com/seu-usuario/projeto-redes" target="_blank">🔌 Laboratório de Redes com Cisco e pfSense</a>
+    <a href="https://github.com/seu-usuario/projeto-monitoramento" target="_blank">📊 Painel de Monitoramento com Zabbix e Grafana</a>
+    <a href="https://github.com/seu-usuario/analise-dados" target="_blank">📈 Análise de Dados com Python e Streamlit</a>
   </section>
 
   <section>
@@ -206,19 +248,13 @@
     </div>
   </section>
 
-  <section class="projects">
-    <h2>🚀 Projetos</h2>
-    <a href="https://github.com/Lorena110507/projeto-redes" target="_blank">🔌 Laboratório de Redes com Cisco e pfSense</a>
-    <a href="https://github.com/Lorena110507/projeto-monitoramento" target="_blank">📊 Painel de Monitoramento com Zabbix e Grafana</a>
-    <a href="https://github.com/Lorena110507/analise-dados" target="_blank">📈 Análise de Dados com Python e Streamlit</a>
-  </section>
-
   <section>
     <h2>📫 Contato</h2>
-    <p>Email: lorenagabarao01531@gmail.com</p>
+    <p>Email: seuemail@exemplo.com</p>
     <div class="social">
-      <a href="https://github.com/Lorena110507" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/Lorena Gabarão" target="_blank">LinkedIn</a>
+      <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
+      <a href="mailto:seuemail@exemplo.com">Email</a>
     </div>
   </section>
 
